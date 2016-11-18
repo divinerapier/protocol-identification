@@ -7,6 +7,9 @@ import (
 	"time"
 )
 
+// commit
+
+// X11Reply  struct for x11reply
 type X11Reply struct {
 	Success                        uint8  `json:"success,omitempty"`
 	ProtocolMajorVersion           uint16 `json:"protocol-major-version,omitempty"`
