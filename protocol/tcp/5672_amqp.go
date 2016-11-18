@@ -8,6 +8,9 @@ import (
 	"strings"
 )
 
+// commit
+
+// GrabAmqp grab amqp protocol
 func GrabAmqp(addr string) bool {
 	conn, err := net.Dial("tcp", addr+":5672")
 	if err != nil {
