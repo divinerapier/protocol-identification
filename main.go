@@ -1,8 +1,6 @@
 package main
 
-import (
-	"protocol-identification/protocol/tcp"
-)
+import "github.com/DivineRapier/protocol-identification/protocol/other"
 
 func main() {
 	// fmt.Println(protocol.CheckSupermicro("http://68.32.228.186:49152"))
@@ -19,11 +17,7 @@ func main() {
 
 	//protocol.SendDAAP("123.192.60.96:3689")
 
-	// protocol.SendSIP("120.14.163.37")
-	// protocol.SendSIP("79.122.34.174:5060")
-	// protocol.SendSIP("84.187.201.180:5060")
-	// protocol.SendSIP("128.234.103.143:5060")
-	// protocol.SendSIP("85.240.166.90:5060")
+	//udp.GrabSIP("93.225.93.11")
 
 	// protocol.SendVentrilo("174.136.101.106:3784")
 	// protocol.SendVentrilo("220.233.185.152:3784")
@@ -39,7 +33,7 @@ func main() {
 	// 	"166.143.158.234", "217.71.39.203", "217.201.245.135", "210.242.38.169", "31.61.112.192",
 	// }
 	// for _, v := range ips {
-	// 	protocol.SendProconos(v + ":20547")
+	// 	tcp.GrabProConOs(v + ":20547")
 	// }
 
 	// ips := []string{
@@ -73,19 +67,80 @@ func main() {
 	// 	udp.GrabCoap(v)
 	// }
 
+	// ips := []string{
+	// 	"10.10.10.234",
+	// 	"27.124.246.217",
+	// 	"119.56.147.83",
+	// 	"66.168.98.102",
+	// 	"189.144.162.255",
+	// 	"202.118.216.3",
+	// 	"109.129.179.180",
+	// 	"201.140.170.50",
+	// 	"80.14.222.249",
+	// }
+
+	// for _, v := range ips {
+	// 	tcp.GrabX11(v)
+	// }
+
+	// ips := []string{
+	// 	"61.93.14.78",
+	// 	"172.248.220.22",
+	// 	"219.85.50.232",
+	// 	"1.34.65.74",
+	// 	"108.215.84.228",
+	// }
+
+	// for _, v := range ips {
+	// 	udp.GrabPCAnywhere(v)
+	// }
+
+	// ips := []string{
+	// 	"128.255.217.234",
+	// 	"23.96.43.31",
+	// }
+
+	// for _, v := range ips {
+	// 	http.GrabMicrosoftHTTPSAPI(v)
+	// }
+
+	// ips := []string{
+	// 	"166.250.110.26",
+	// 	"80.34.8.46",
+	// 	"166.141.57.248",
+	// }
+	// for _, v := range ips {
+	// 	udp.GrabOMRON(v)
+	// }
+
+	// ips := []string{
+	// 	"46.81.96.228",
+	// 	"69.255.166.118",
+	// 	"68.56.67.199",
+	// }
+	// for _, v := range ips {
+	// 	http.GrabXPlex(v)
+	// }
+
+	// ips := []string{
+	// 	"166.255.218.3",
+	// 	"166.142.57.1",
+	// 	"166.165.98.234",
+	// 	"166.131.53.213",
+	// 	"166.255.21.242",
+	// 	"166.150.73.147",
+	// 	"107.85.62.16",
+	// 	"166.131.53.213",
+	// }
+	// for _, v := range ips {
+	// 	http.GrabSierraSireless(v)
+	// }
+
 	ips := []string{
-		"10.10.10.234",
-		"27.124.246.217",
-		"119.56.147.83",
-		"66.168.98.102",
-		"189.144.162.255",
-		"202.118.216.3",
-		"109.129.179.180",
-		"201.140.170.50",
-		"80.14.222.249",
+		"176.112.218.26",
+	}
+	for _, v := range ips {
+		other.GrabGIT(v)
 	}
 
-	for _, v := range ips {
-		tcp.GrabX11(v)
-	}
 }

@@ -1,4 +1,4 @@
-package protocol
+package other
 
 import (
 	"fmt"
@@ -7,14 +7,14 @@ import (
 	"os"
 )
 
-func SendGIT(addr string) {
+func GrabGIT(addr string) {
 	// transCfg := &http.Transport{
 	// 	TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
 	// }
 	client := http.Client{
 	//Transport: transCfg,
 	}
-	resp, err := client.Get("http://" + addr + "/info/refs")
+	resp, err := client.Get("http://" + addr + "/text.git/HEAD")
 	if err != nil {
 		fmt.Println(err.Error())
 		return
